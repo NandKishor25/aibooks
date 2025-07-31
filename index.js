@@ -7,7 +7,7 @@ const app = express();
 const corsOptions = {
   origin: 'https://brainzo.netlify.app', // replace with actual frontend domain
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true, // if you're using cookies or authentication
+ 
 };
 app.use(cors(corsOptions));
 
