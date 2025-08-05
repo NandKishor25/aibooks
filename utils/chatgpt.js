@@ -14,9 +14,9 @@ const openai = new OpenAI({
  */
 async function generateResponse(systemPrompt, userPrompt, options = {}) {
   const {
-    model = 'gpt-4-turbo',
-    temperature = 0.7,
-    maxTokens = 1500,
+    model = 'gpt-3.5-turbo',
+    temperature = 0.9,
+    maxTokens = 2000,
     presencePenalty = 0.1,
     frequencyPenalty = 0.1
   } = options;
@@ -88,7 +88,7 @@ Chapter Content: ${chapterContent}`;
 Please answer this question based on the chapter content provided above.`;
 
   return await generateResponse(systemPrompt, userPrompt, {
-    temperature: 0.7,
+    temperature: 1,
     maxTokens: 1500
   });
 }
