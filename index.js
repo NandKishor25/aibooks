@@ -4,7 +4,13 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const app = express();
-app.use(cors());
+const corsOptions = {
+  origin: 'https://brainzo.netlify.app', // replace with actual frontend domain
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+ 
+};
+app.use(cors(corsOptions));
+
 app.use(express.json());
 
 // MongoDB connection
