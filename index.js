@@ -17,6 +17,7 @@ app.use('/api/summary', require('./routes/summary'));
 app.use('/api/questions', require('./routes/question'));
 app.use('/api/ask', require('./routes/ask'));
 app.use('/api/ask-chapter', require('./routes/ask-chapter'));
+app.use('/api/scan-question', require('./routes/scan-question'));
 
 app.get('/', (req, res) => {
   res.send('Backend API is running');
