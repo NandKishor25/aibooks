@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const app = express();
 const corsOptions = {
-  origin: 'https://brainzo.netlify.app', // replace with actual frontend domain
+  origin: 'https://brainzoai.netlify.app', // replace with actual frontend domain
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
  
 };
